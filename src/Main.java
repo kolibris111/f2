@@ -51,6 +51,11 @@ public class Main {
         String sentence = "Šiandien labai graži diena";
         countSymbols(sentence);
 
+        System.out.println("*********** 11 uzduotis ***********");
+
+        String input = "Pukuotukas";
+        System.out.println(input);
+        System.out.println("Atvirkščiai: " + revString(input));
     }
     public static void result(int a, int b) {
         System.out.println(a + b);
@@ -111,6 +116,10 @@ public class Main {
         }
         System.out.println("Raidžių skaičius: " + letters);
         System.out.println("Tarpų skaičius: " + spaces);
+    }
+    public static String revString(String s) {
+        StringBuilder sb = new StringBuilder(s);
+        return sb.reverse().toString();
     }
 
 
