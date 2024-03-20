@@ -29,14 +29,16 @@ public class Main {
 
         System.out.println("*********** 6 uzduotis ***********");
 
-        int[] arr2 = numArr (10, 20, 30);
-        printArr(arr2);
+        int[] rndArr = rndIntArr (10, 20, 30);
+        printArr(rndArr);
 
         System.out.println("*********** 7 uzduotis ***********");
 
+        System.out.println( sumArr(rndArr));
 
+        System.out.println("*********** 8 uzduotis ***********");
 
-
+        System.out.println(avgArr(rndArr));
     }
     public static void result(int a, int b) {
         System.out.println(a + b);
@@ -57,12 +59,22 @@ public class Main {
     public static int randNumb(int min, int max) {
         return (int) (min + Math.random() * (max - min));
     }
-    public static int[] numArr(int min,int max,int length){
-        int[]array= new int[length];
+    public static int[] rndIntArr(int min,int max,int length){
+        int[] arr = new int[length];
         for(int i= 0; i < length; i++){
-            array[i] = min - (int)Math.round(Math.random()*(max-min));
+            arr[i] = min - (int)Math.round(Math.random()*(max-min));
         }
-        return array;
+        return arr;
+    }
+    public static int sumArr(int[] arr) {
+        int sum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+        return sum;
+    }
+    public static double avgArr(int[] arr) {
+        return (double) sumArr(arr) / arr.length;
     }
 
 }
