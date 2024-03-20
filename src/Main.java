@@ -46,6 +46,10 @@ public class Main {
         int column = 30;
         printRectang(20,30);
 
+        System.out.println("*********** 10 uzduotis ***********");
+
+        String sentence = "Šiandien labai graži diena";
+        countSymbols(sentence);
 
     }
     public static void result(int a, int b) {
@@ -93,5 +97,21 @@ public class Main {
             System.out.println();
         }
     }
+    public static void countSymbols (String sentence) {
+        int letters = 0;
+        int spaces = 0;
+
+        for (int i = 0; i < sentence.length(); i++) {
+            char symbol = sentence.charAt(i);
+            if (Character.isLetter(symbol)) {
+                letters++;
+            } else if (Character.isWhitespace(symbol)) {
+                spaces++;
+            }
+        }
+        System.out.println("Raidžių skaičius: " + letters);
+        System.out.println("Tarpų skaičius: " + spaces);
+    }
+
 
 }
