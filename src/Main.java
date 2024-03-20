@@ -39,6 +39,14 @@ public class Main {
         System.out.println("*********** 8 uzduotis ***********");
 
         System.out.println(avgArr(rndArr));
+
+        System.out.println("*********** 9 uzduotis ***********");
+
+        int row = 20;
+        int column = 30;
+        printRectang(20,30);
+
+
     }
     public static void result(int a, int b) {
         System.out.println(a + b);
@@ -75,6 +83,15 @@ public class Main {
     }
     public static double avgArr(int[] arr) {
         return (double) sumArr(arr) / arr.length;
+
+    }
+    public static void printRectang (int row, int column) {
+        for (int i = 0; i < row ; i++) {
+            for (int j = 0; j < column; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
 
 }
