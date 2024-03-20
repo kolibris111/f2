@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("*********** 1 uzduotis ***********");
@@ -56,7 +58,19 @@ public class Main {
         String input = "Pukuotukas";
         System.out.println(input);
         System.out.println("Atvirkščiai: " + revString(input));
+
+        System.out.println("*********** SUNKESNE 1 uzduotis ***********");
+
+        String bruksniai = "---";
+        printSakinys(bruksniai);
     }
+    // SUNKESNE 1 uzduotis//
+    public static void printSakinys(String bruksniai) {
+        System.out.println(bruksniai + "Kempiniukas Plačiakelnis" + bruksniai);
+    }
+    // SUNKESNE 2 uzduotis//
+
+
     public static void result(int a, int b) {
         System.out.println(a + b);
     }
@@ -121,6 +135,7 @@ public class Main {
         StringBuilder sb = new StringBuilder(s);
         return sb.reverse().toString();
     }
+
 
 
 }
