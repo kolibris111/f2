@@ -63,6 +63,9 @@ public class Main {
 
         String bruksniai = "---";
         printSakinys(bruksniai);
+
+        System.out.println("*********** SUNKESNE 2 uzduotis ***********");
+
     }
     // SUNKESNE 1 uzduotis//
     public static void printSakinys(String bruksniai) {
